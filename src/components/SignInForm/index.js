@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-export default function ({ onSubmit }) {
+export default function SignInForm({ onSubmit }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    // const [ errors, setErrors ] = useState({});
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -31,6 +30,9 @@ export default function ({ onSubmit }) {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
+            </div>
+            <div>
+                <button type="submit">Sign In</button>
             </div>
         </form>
     )

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ({ onSubmit }) {
+export default function SignUpForm({ onSubmit }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [password1, setPassword1] = useState("");
